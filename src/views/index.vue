@@ -3,6 +3,8 @@
     <div v-for="item in index">{{ item }}</div>
     <div class="a center">123</div>
     <a href="">link</a>
+    <el-button>123</el-button>
+    <el-button type="primary">Primary</el-button>
   </div>
 </template>
 <script setup lang='ts'>
