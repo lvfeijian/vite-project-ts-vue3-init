@@ -61,5 +61,6 @@ export default defineConfig({
         assetFileNames: `[ext]/[name]-[hash].${timeStamp}.[text]`
       }
     }
-  }
+  },
+  envPrefix:"VUE_",//APP_  为自定义开头名
 })
