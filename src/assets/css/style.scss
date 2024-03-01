@@ -1,0 +1,19 @@
+$primary: #1f1f1f;
+$base-color: #1d3444;
+// $base-color: var(--base-color,#9b4c18)
+@mixin textstyle($size) {
+	color: $primary;
+	font-size: $size;
+	font-weight: bold;
+}
+@mixin btnStyle($bgColor, $fzColor) {
+	width: 100px;
+	height: 40px;
+	background: $bgColor;
+	border-radius: 4px;
+	color: $fzColor;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}

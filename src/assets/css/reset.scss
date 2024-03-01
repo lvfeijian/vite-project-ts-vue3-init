@@ -1,0 +1,62 @@
+* {
+  border: 0;
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-family: "SourceHanSans", "Roboto", "-apple-system", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+input[type="password"]::-ms-reveal {
+  display: none;
+}
+/* chrome */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+/* 火狐浏览器 */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
