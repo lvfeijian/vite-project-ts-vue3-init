@@ -1,16 +1,20 @@
 <template>
-  <div class="index">index
+  <div>
+    <div v-for="item in index">{{ item }}</div>
+    <div class="a center">123</div>
+    <a href="">link</a>
   </div>
-  <div class="center">123</div>
-
-
 </template>
+<script setup lang='ts'>
+import { ref } from 'vue'
+const index = ref<number[]>([1,2,3])
 
-<script setup></script>
+</script>
 
-<style scoped lang="scss">
-.index{
-  @include btnStyle(#888, 20px);
 
+<style lang="scss" scoped>
+.a{
+  width: 500px;
+  @include textstyle(20px)
 }
 </style>
