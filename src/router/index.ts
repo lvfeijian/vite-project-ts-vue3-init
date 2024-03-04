@@ -6,7 +6,7 @@ const routes: RouteRecordRaw[] = [
   {
     path: "/",
     name: "Index",
-    component: () => import('../views/index.vue')
+    component: () => import("../views/index.vue")
   }
 ];
 const router = createRouter({
@@ -25,6 +25,5 @@ router.beforeEach(async (_to, _from, next) => {
   next();
 });
 
-router.afterEach((_to) => {
-});
+router.afterEach((_to) => {});
 export default router;

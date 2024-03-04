@@ -4,8 +4,8 @@ export function getImageUrl(name: string) {
 }
 
 export function _isMobile() {
-	let flag = navigator.userAgent.match(
-		/(iPhone|iPod|Android|ios|iOS|iPad|Backerry|WebOS|Symbian|Windows Phone|Phone)/i
-	);
-	return flag;
+  let flag = navigator.userAgent.match(
+    /(iPhone|iPod|Android|ios|iOS|iPad|Backerry|WebOS|Symbian|Windows Phone|Phone)/i
+  );
+  return flag;
 }

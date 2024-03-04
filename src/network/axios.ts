@@ -1,7 +1,7 @@
 import Axios from "axios"; // 引入axios
 import { SUCCESS_CODE } from "./constants";
 import router from "@/router";
-import type {AxiosResponse} from 'axios'
+import type { AxiosResponse } from "axios";
 console.log(import.meta.env.VUE_APP_API_URL);
 
 export const axios = Axios.create({
@@ -30,7 +30,6 @@ axios.interceptors.request.use(
 // 响应拦截器
 axios.interceptors.response.use(
   (response) => {
-    
     const { code, message } = response.data;
 
     if (SUCCESS_CODE.has(code)) return formatResponse(response);
@@ -61,9 +60,8 @@ axios.interceptors.response.use(
  */
 
 async function formatResponse(response: AxiosResponse<any, any>) {
-  
   // let { code, message, data } = response.data;
-  
+
   // response.data = data;
   // response.code = code;
   // response.message = message;

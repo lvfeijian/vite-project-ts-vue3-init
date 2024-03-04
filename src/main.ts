@@ -1,5 +1,5 @@
-import { createApp } from 'vue'
-import App from './App.vue'
+import { createApp } from "vue";
+import App from "./App.vue";
 import router from "./router";
 import pinia from "./store";
 import "@/assets/css/reset.scss"; // 普通的scss文件
