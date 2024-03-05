@@ -38,5 +38,5 @@ export default {
    */
   arrowParens: "always",
   // 是否使用根目录下的EditorConfig配置文件
-  useEditorConfig: false
+  // useEditorConfig: false
 };
