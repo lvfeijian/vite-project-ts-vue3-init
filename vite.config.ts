@@ -27,7 +27,7 @@ export default defineConfig({
     preprocessorOptions: {
       scss: {
         silenceDeprecations: ['legacy-js-api'],
-        additionalData:'',
+        additionalData:'@use "@/assets/css/style.scss" as *;',
       }
     },
     postcss: {
