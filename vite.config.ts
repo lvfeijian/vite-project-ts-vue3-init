@@ -49,7 +49,14 @@ export default defineConfig({
   // 配置前端服务地址和端口
 	server: {
 		host: "0.0.0.0", //自定义主机名
-		port: 8992, //自定义端口
+		port: 8993, //自定义端口
+    proxy: {
+			"/api": {
+				target: "http://192.168.4.155:8085",
+				changeOrigin: true,
+				rewrite: (path) => path.replace(/^\/api/, ''),
+			}
+		}
 	},
   build: {
     emptyOutDir: true,
